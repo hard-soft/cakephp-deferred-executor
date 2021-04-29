@@ -1,0 +1,33 @@
+{
+    "name": "hard-soft/cakephp-deferred-executor",
+    "description": "Queue events in database, redis,...",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "email", "queue", "tasks", "events", "cron"],
+    "authors": [
+      {
+        "name": "Daniel Spöck",
+        "role": "Author"
+      }
+    ],
+    "require": {
+      "cakephp/cakephp": "~3.9",
+      "josegonzalez/cakephp-queuesadilla": "0.6.*"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^5.7|^6.0",
+      "cakephp/cakephp-codesniffer": "^3.0",
+      "php-coveralls/php-coveralls": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeferredExecutor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EmailQueue\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+  }
+  
